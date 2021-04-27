@@ -22,7 +22,7 @@
 {clear: both;}
 body
 {
-	background-color: black;
+	background: url("img/montagne.jpg") fixed no-repeat top right, url("img/neige.jpg") fixed;
 }
 
 p
@@ -30,17 +30,16 @@ p
     font-size: 0.8em;
     font-family: Roboto-Regular,"Arial Black", Arial, Verdana, sans-serif;
     text-align: justify;
-    color: rgb(240,96,204);
-    background-color: pink;
+    color: black;
+    opacity: 0.6;
 }
 h1
 {
 	font-size: 1,3em;
 	font-family: 'open_sansregular', Arial, sans-serif;
 	font-weight: bold;
-	text-decoration: underline;
-	text-align: center;
-	color: pink;
+	text-align: left;
+	color: black;
 }
 em
 {
