@@ -1,11 +1,19 @@
-h1
+h1:hover
 {
-    border:3px pink solid;
-    border-radius: 20px / 30px;
-    box-shadow: 6px 6px 10px black;
+    color:green;
+    text-decoration: underline;
 }
 
-p
+p:hover
 {
-    text-shadow: 2px 2px 10px black;
+    border-left: 3px solid black;
+}
+a:active
+{
+    color:red;
+}
+
+a:visited
+{
+    color:#888888;
 }
