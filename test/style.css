@@ -1,18 +1,27 @@
 h1
 {
-    background-color: grey;
+    background-color: red;
     min-width: 100px;
     width: 50%;
-    height: 150px;
+    height: 70px;
+    color: white;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 p
 {
     background-color: black;
     color:white;
-    width: 250px;
-    min-height: 70px;
-    height: 30%;
+    width: 350px;
+    border: 1px solid red;
+    text-align: justify;
+    padding: 12px;
+    margin: auto;
+    margin-bottom: 20px;
+    height: 110px;
+    overflow: auto;
 }
 a:hover
 {
