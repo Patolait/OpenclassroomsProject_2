@@ -1,0 +1,15 @@
+/* Feuille de style */
+#menu
+{
+  list-style:none;
+}
+#topsection
+{
+  display:flex;
+}
+p
+{
+  margin:auto;
+  text-align:justify;
+  width:80%;
+}
