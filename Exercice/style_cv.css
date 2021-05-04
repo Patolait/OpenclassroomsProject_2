@@ -12,16 +12,62 @@
 }
 body
 {
-	background-image: url("fond_cv.jpg");
+	background-image:url("../test/tp_images_polices/images/fond_jaune.png");
+	text-align: center;
+	
 }
 
-h2
+#bloc_cv
 {
-	background-color: white;
+	display: flex;
+	flex-direction: column;
 	text-align: center;
-	border:double blue;
-	font-family: 'open_sansbold', Impact, Arial, serif;
 }
+
+#bloc_information
+{
+	display: flex;
+	justify-content:space-around;
+}
+
+#presentation
+{
+	display: flex;
+	flex-direction: column;
+}
+
+.experience
+{
+	margin-right: 10px;
+	width: 33%;
+	border-radius: 10px;
+	background-color: #B0FCCE;
+	text-align: justify;
+	position: relative;
+	padding-top: 40px;
+}
+
+.experience h2
+{
+	background-color: rgba(8,54,6,0.6);
+	color: white;
+	text-shadow: 3px 1px 5px black;
+	text-align: center;
+	font-family: 'open_sansbold', Impact, Arial, serif;
+	width: 100%;
+	border-radius: 10px 10px 0px 0px;
+	position: absolute;
+	top:0;
+	
+}
+.experience p
+{
+	text-align: center;
+	font-family: Arial, serif;
+	
+}
+
+
 ul
 { 
 	text-align: center;
@@ -37,16 +83,14 @@ ol
 	float: left;
 	box-shadow: 6px 6px 20px black;
 }
-.dessous
-{
-	clear:both;
-}
+
 .NomPrenom
 {
 	font-weight: bold;
 	font-size:2em;
 	color:blue;
 	font-family: 'open_sansbold', Impact, Arial, serif;
+	margin-top: 0;
 }
 .titre
 {
