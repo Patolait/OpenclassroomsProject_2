@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Formulaire</title>
+</head>
+
+<body>
+	<h2>Mon premier formulaire</h2>
+	
+	<form method="post" action="traitement.php">
+		<fieldset>
+			<legend>Coordonnées</legend>
+		
+			<!--Nom-->
+			<p>
+				<label for="pseudo">Pseudo</label> : <input type="text" name="pseudo" id="pseudo" placeholder="Votre pseudo" autofocus required />
+			</p>
+			<!--pass-->
+			<p>
+				<label for="pass">Mot de passe</label> : <input type="password" name="pass" id="pass" size="17px" maxlength="10" required />
+			</p>
+			<!--tel-->
+			<p>
+				<label for="tel">Téléphone</label> : <input type="tel" name="tel" id="tel" size="19px" maxlength="10" required/>
+			</p>
+			<!--mail-->
+			<p>
+				<label for="mail">e-Mail</label> : <input type="email" name="mail" id="mail" placeholder="votre adresse mail" size="30px" required />
+			</p>
+			<!--web-->
+			<p>
+				<label for="web">Site web</label> : <input type="url" name="web" id="web" placeholder="votre site web" size="60px" required />
+			</p>
+		</fieldset>
+		<fieldset>
+			<legend>Etat</legend>
+			<!--try-->
+			<p>
+				<label for="try">Essai(s)</label> : <input type="number" name="try" id="try" size="5px" min="2" max="30" step="2"/>
+			</p>
+			<!--taille-->
+			<p>
+				<label for="taille">Taille</label> : <input type="range" name="taille" id="taille" min="2" max="20" step="2"/>
+			</p>
+			<!--color-->
+			<p>
+				<label for="color">Couleur</label> : <input type="color" name="taille" id="color"/>
+			</p>
+			<!--date-->
+			<p>
+				<label for="date">Date</label> : <input type="date" name="date" id="date" size="20px"/>
+			</p>
+			<!--search-->
+			<p>
+				<label for="search">Recherche</label> : <input type="search" name="date" id="search" size="20px"/>
+			</p>
+		</fieldset>
+		<fieldset>
+			<legend>Preferences</legend>
+			<!--Parfum-->
+			<h3>Votre(s) parfum(s) preferé(s)</h3>
+			<p>
+				<input type="checkbox" name="vanille" id="vanille"/><label for="vanille">Vanille</label><br />
+				<input type="checkbox" name="chocolat" id="chocolat"/><label for="chocolat">Chocolat</label><br />
+				<input type="checkbox" name="fraise" id="fraise" checked/><label for="fraise">Fraise</label><br />
+			</p>
+			<!--temperature-->
+			<h3>Votre temperature prefere</h3>
+			<p>
+				<input type="radio" name="temperature" id="chaud"/><label for="chaud">Chaud</label><br />
+				<input type="radio" name="temperature" id="froid"/><label for="froid">Froid</label><br />
+				<input type="radio" name="temperature" id="tiede"/><label for="tiede">Tiede</label><br />
+			</p>
+			<!--dessert-->
+			<h3>Votre dessert prefere</h3>
+			<p>
+				<label for="dessert">Choisissez votre dessert prefere</label><br />
+				<select name="dessert" id="dessert">
+					<option value="tarte aux pommes">Tarte aux pommes</option>
+					<option value="crumble">Crumble</option>
+					<option value="glace">Glace</option>
+					<option value="Aucun" selected>Aucun</option>
+				</select>
+			</p>
+		</fieldset>
+		<fieldset>
+			<legend>Ameliorations</legend>
+			<!--amelioration-->
+			<p>
+				<label for="amelioration">Comment pourrions nous nous ameliorer ?</label><br/>
+				<textarea name="amelioration" id="amelioration" rows="5" cols="50"></textarea>
+			</p>
+		</fieldset>
+			<!--Valider-->
+			<p>
+				<input type="submit" value="Envoyer" />
+			</p>
+		
+	</form>
+	
+	<p>
+		Aprés le formulaire
+	</p>
+	
+	
+</body>
+</html>
