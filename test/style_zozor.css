@@ -288,3 +288,88 @@ footer h1
 	text-decoration: none;
 	color: #760001;
 }
+
+/* Regle media queries pour ecran inferieur a 1024px */
+
+@media all and (max-width:1024px)
+{
+	#bloc_page
+	{
+		width: auto;
+	}
+	
+	/*navigation */
+	
+	nav
+	{
+		width: auto;
+		text-align: left;
+	}
+	
+	nav ul
+	{
+		flex-direction: column;
+	}
+	
+	nav li
+	{
+		padding-left: 4px;
+	}
+	
+	nav a
+	{
+		font-size: 1.1em;
+	}
+	
+	nav a:hover
+	{
+		border-bottom: 0;
+	}
+	
+	/* banniere */
+	
+	#banniere_image
+	{
+		display: none;
+	}
+	
+	/* bloc aside */
+	
+	section
+	{
+		flex-direction: column;
+	}
+	
+	article, aside
+	{
+		width: auto;
+		margin-bottom: 15px;
+	}
+	
+	#fleche_bulle
+	{
+		display: none;
+	}
+	
+	#photo_zozor
+	{
+		width: 110px;
+		float: right;
+		margin-left: 15px;
+		margin-right: 35px;
+	}
+	
+	aside p:last-child
+	{
+		text-align: center;
+	}
+	
+	/* footer */
+	
+	#listes_amis
+	{
+		flex-direction: column;
+	}
+	
+	
+}
