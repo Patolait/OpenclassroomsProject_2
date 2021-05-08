@@ -39,7 +39,7 @@ body
 #page
 {
 	display: flex;
-	justify-content: flex-start;
+	justify-content: center;
 	align-content: space-between;
 }
 
@@ -196,4 +196,49 @@ ul
 	line-height: 1.5;
 }
 
+/* Regle media queries pour ecran inferieur a 1024px */
 
+@media all and (max-width:1024px)
+{
+	body
+	{
+		width: auto;
+	}
+	
+	.liseret
+	{
+	display: none;
+	}
+	
+	#bloc_information
+	{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	}
+	
+	#bloc_information section
+	{
+		justify-content: center;
+	}
+	
+	.experience
+	{
+		width: auto;
+		margin-bottom: 30px;
+		
+	}
+	
+	.competence
+	{
+		width: auto;
+		margin-bottom: 30px;
+		
+	}
+	
+	.formation
+	{
+		width: auto;
+		margin-bottom: 30px;
+	}
+}
