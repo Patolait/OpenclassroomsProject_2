@@ -1,7 +1,236 @@
 @charset "utf-8";
 /* CSS Document */
 
+@font-face
+{
+	font-family:"Raleway;";
+	src: url("font/Raleway-Regular.ttf");
+}
+
 body
 {
+	
+	font-family: Raleway, Arial, sans-serif;
+	font-size: 1em;
+}
+
+#bloc_page
+{
 	width: 1440px;
+	margin: auto;
+	
+}
+
+header
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+/* Navigation */
+
+nav ul
+{
+	display: flex;
+	list-style-type: none;
+	justify-content: flex-end;
+}
+
+nav li
+{
+	margin-left: 66px;
+	
+}
+
+nav li strong
+{
+	font-weight: bold;
+	color: #0065FC;
+}
+
+a
+{
+	text-decoration: none;
+}
+
+nav li a:hover
+{
+	color: #0065FC;
+	border-top: 2px #0065FC solid;
+	padding-top: 44px;
+}
+
+/*icone localisation */
+
+#recherche
+{
+	margin-bottom: 15px;
+}
+
+form
+{
+	display: flex;
+}
+
+label
+{
+	display: block;
+	float: left;
+	background-color: #F2F2F2;
+	width: 40px;
+	text-align: center;
+	height: 40px;
+	border-radius: 12px 0px 0px 12px;
+	margin: auto;
+	
+}
+
+label i
+{
+	margin-top: 11px;
+}
+
+input
+{
+	height: 40px;
+	float: left;
+}
+
+button
+{
+
+	width: 133px;
+	height: 40px;
+	text-align: center;
+	background-color: #0065FC;
+	color: white;
+	border-radius: 0px 12px 12px 0px;
+	vertical-align: middle;
+	font-family: Raleway;
+	font-weight: bold;
+	font-size:1.1em;
+}
+
+/* Filtres*/
+
+
+
+#filtres h4
+{
+	display: block;
+}
+
+.box_filtres
+{
+	display: flex;
+}
+
+.box_filtres strong
+{
+	margin-top: 6px;
+	margin-right: 20px;
+}
+
+.box
+{
+	display: flex;
+	height: 26px;
+	border: 2px #F2F2F2 solid;
+	border-radius: 15px;
+	margin-left: 20px;
+	position:relative;
+	padding-left: 35px;
+	padding-right: 15px;
+	margin-bottom: 10px;
+}
+
+.box:hover
+{
+	background-color: #0065FC;
+	color: white;
+}
+
+.element_box
+{
+	padding-top:6px;
+	font-size: 0.8em;
+	font-weight: bold;
+}
+
+.blue
+{
+	display: flex;
+	width: 26px;
+	height: 26px;
+	background-color: #DEEBFF;
+	border-radius: 15px;
+	position: absolute;
+	left: 0px;
+	top: 0px;	
+}
+
+.blue i
+{
+	margin: auto;
+	font-size: 0.8em;
+	color: #0065FC;
+}
+
+/* Info 500 logements*/ 
+
+.information
+{
+	margin-top: 15px;
+	margin-bottom: 40px;
+}
+
+.info
+{
+	display: flex;
+	float: left;
+	width: 26px;
+	height:26px;
+	border: 1px #F2F2F2 solid;
+	border-radius: 20px;
+	margin-right: 10px;
+}
+
+.info i
+{
+	margin: auto;
+	font-size:0.9em;
+	color: #0065FC;
+}
+
+.logement
+{
+	padding-top: 6px;
+}
+
+/* Hebergement */
+
+#hebergement
+{
+	display: flex;
+	justify-content: space-around;
+	
+}
+
+article
+{
+	flex:3;
+	background-color: #F2F2F2;
+	border-radius:20px;
+	margin-right: 20px;
+	padding-top: 20px;
+}
+
+aside
+{
+	flex:2;
+	background-color: #F2F2F2;
+	border-radius:20px;
 }

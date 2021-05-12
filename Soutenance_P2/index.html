@@ -14,72 +14,92 @@
 		
 		<header>
 			<div id="logo">
-				<img src="" alt="logo reservia" />
+				<img src="images/logo/Reservia.svg" alt="logo reservia" />
 			</div>
 			<nav>
 				<ul>
-					<li>H&eacute;bergement</li>
-					<li>Activit&eacute;s</li>
-					<li>S&rsquo;inscrire</li>
+					<li><a href="#hebergement">H&eacute;bergement</a></li>
+					<li><a href="#activites">Activit&eacute;s</a></li>
+					<li><strong>S&rsquo;inscrire</strong></li>
 				</ul>
 			</nav>
 		</header>
 	
 	<!-- Recherche et filtre -->
 		
-		<section id="search">
-			<h3>Trouvez votre hébergement pour des vacances de rêve</h3>
+		<section id="recherche">
+			<h1>Trouvez votre hébergement pour des vacances de rêve</h1>
 			<p>
 				En plein centre ville ou en pleine nature 
 			</p>
+			
 			<!-- Champs de recherche -->
 			<form method="post" action="carte.php">
 				<p>
-					<label><img src="" alt="localisation"/></label>
-					<input type="text" name="search" />
-					<input type="image">
+					<label for="search"><i class="fas fa-map-marker-alt"></i></label>
+					<input type="search" name="search" id="search" placeholder="Ville, Pays" size="35px"/>
+					<button type="submit">Rechercher</button>
 				</p>
-			</form>
-			
+			</form>		
 		</section>
 		
 		<!-- Filtres -->
 		
 		<section id="filtres">
-			<h4>Filtres</h4>
-			
-			<!--Economique -->
-			<div class="box">
-				<span class="blue">
-					<i class="fas fa-money-bill-wave"></i>
-				</span> 
-				&Eacute;conomique
+			<div class="box_filtres">
+				<strong>Filtres</strong>
+				
+				<!--Economique -->				
+				<div class="box">
+					<div class="blue">
+						<i class="fas fa-money-bill-wave"></i>
+					</div> 
+					<div class="element_box">
+						&Eacute;conomique
+					</div>
+				</div>
+				
+
+				<!-- Familial -->
+				<div class="box">
+					<div class="blue">
+						<i class="fas fa-child"></i>
+					</div>
+					<div class="element_box">
+						Familial
+					</div>
+				</div>
+				
+				<!-- Romatique -->
+				<div class="box">
+					<div class="blue">
+						<i class="fas fa-heart"></i>
+					</div>
+					<div class="element_box">
+						Romatique
+					</div>					
+				</div>
+				
+				<!-- Animaux -->
+				<div class="box">
+					<div class="blue">
+						<i class="fas fa-dog"></i>
+					</div>
+					<div class="element_box">
+						Animaux autoris&eacute;s
+					</div>
+					
+				</div>
 			</div>
 			
-			<!-- Familial -->
-			<div class="box">
-				<span class="blue">
-					<i class="fas fa-child"></i>
-				</span>
-				Familial
+			<div class="information">
+				<div class="info">
+					<i class="fas fa-info"></i>
+				</div> 
+				<div class="logement"> 
+					Plus de 500 logements sont disponibles dans cette ville
+				</div>
 			</div>
-			<!-- Romatique -->
-			<div class="box">
-				<span class="blue">
-					<i class="fas fa-heart"></i>
-				</span>
-				Romatique
-			</div>
-			<!-- Animaux -->
-			<div class="box">
-				<span class="blue">
-					<i class="fas fa-dog"></i>
-				</span>
-				Animaux autoris&eacute;s
-			</div>
-			<p>
-				<img src="" alt="info" /> Plus de 500 logements sont disponibles dans cette ville
-			</p>
 		</section>
 		
 	<!-- Hebergement -->
