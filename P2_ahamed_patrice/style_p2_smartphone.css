@@ -1,0 +1,171 @@
+/* Resolution smartphone */
+
+@media screen and (max-width: 600px)
+{
+	#bloc_page
+    {
+        width: auto;
+        margin: auto;
+    }
+
+    /* Navigation */
+
+    .logo
+    {
+        float: left;
+    }
+
+    nav ol
+    {
+        flex-direction: column-reverse;
+        flex-wrap: wrap; 
+    }
+
+
+    /*Recherche*/
+
+    #recherche h1
+    {
+        font-size: 1.3em;
+    }
+
+    #recherche p
+    {
+        font-size: 0.9em;
+    }
+
+    form
+    {
+        margin:auto;
+    }
+
+    button
+    {
+        width: 40px;
+        padding-top: 0px;
+    }
+
+    .cache
+    {
+        display: none;
+    }
+
+    button i
+    {
+        visibility: visible;
+        padding-right: 10px;
+    }
+
+
+    /* Filtres */
+
+    #filtres
+    {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .titre_filtres
+    {
+        padding-bottom: 20px;
+        padding-left: 20px;
+    }
+
+    .box_filtres
+    {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+
+
+    /* Hebergement */
+
+    #hebergement
+    {
+        flex-direction: column;
+    }
+
+    article
+    {
+        order: 2;
+        flex: 1;
+        background-color: white;
+    }
+
+    aside
+    {
+        order: 1;
+        flex: 1;
+    }
+
+ 
+    .conteneur
+    {
+        height: auto;
+        flex-direction: column;
+        justify-content: space-around;
+       
+    }
+
+    .vignette
+    {
+        width: 320px;
+        margin: 5px 0px 5px 30px;
+    }
+
+
+    /* Activités */
+
+    #activites
+    {
+        height: auto;
+        margin: auto;
+    }
+
+    #activites h2
+    {
+        margin-left: 20px;
+    }
+    
+    .marseille
+    {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .marseille1 figure
+    {
+        height: 200px;
+        width: 320px;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    .marseille1 figure img
+    {
+        height: 80%;
+    }
+
+    .marseille2 figure
+    {
+        height: 200px;
+        margin: auto;
+        width: 320px;
+        margin-bottom: 20px;
+    }
+
+    .marseille2 figure img
+    {
+        height: 80%;
+    }
+
+
+    /* Footer */
+
+    .group_footer
+    {
+        flex-direction: column;
+    }
+
+}
