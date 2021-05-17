@@ -24,8 +24,8 @@ body
 header
 {
 	display: flex;
-	justify-content: space-between;
 	align-items: center;
+	justify-content: space-between;
 	margin-top: 30px;
 	margin-bottom: 30px;
 }
@@ -36,16 +36,18 @@ nav ol
 {
 	display: flex;
 	list-style-type: none;
-	justify-content: flex-end;
+	margin-left: 100%;
 }
 
 nav li
 {
-	margin-left: 66px;
+	margin-left: 75px;
 	
 }
 
-nav li strong
+/* Inscription */
+
+#inscription
 {
 	font-weight: bold;
 	color: #0065FC;
@@ -53,6 +55,7 @@ nav li strong
 
 a
 {
+	color: black;
 	text-decoration: none;
 }
 
@@ -102,7 +105,7 @@ input
 button
 {
 
-	width: 133px;
+	width: 140px;
 	height: 40px;
 	text-align: center;
 	background-color: #0065FC;
@@ -112,7 +115,7 @@ button
 	font-family: Raleway;
 	font-weight: bold;
 	font-size:1.1em;
-	padding-top: 8px;
+	padding: 2px 0px 3px 4px;
 }
 
 button i

@@ -1,0 +1,103 @@
+@charset "utf-8";
+/* CSS Document */
+
+@media screen and (min-width:600px) and (max-width: 1024px)
+{
+	#bloc_page
+    {
+        width: auto;
+        margin: auto;
+    }
+	
+	nav ol
+	{
+		margin-left: 0px;
+	}
+	
+	nav li
+{
+	margin-left: 30px;
+	
+}
+	
+	/* Filtres */
+
+    #filtres
+    {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .titre_filtres
+    {
+        padding-bottom: 20px;
+        padding-left: 20px;
+    }
+
+    .box_filtres
+    {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+	
+	#hebergement
+	{
+		flex-direction: column;
+	}
+	
+	article
+	{
+		flex: 1;
+		width: 100%;
+	}
+	
+	aside
+	{
+		flex: 1;
+		margin-top: 20px;
+	}
+	
+	.conteneur
+    {
+        height: auto;
+		width: 90%;
+        justify-content: space-around;
+		flex-wrap: wrap;
+		margin-bottom: 20px;
+       
+    }
+	
+	.vignette
+	{
+		width: 270px;
+		margin-bottom: 20px;
+	}
+	
+	.bloc_pop
+	{
+		margin-top: 20px;
+	}
+	
+	#activites
+	{
+		height: auto;
+	}
+	
+	.marseille
+	{
+		flex-wrap: wrap;
+		height: auto;
+		justify-content: space-around;
+	}
+	
+	.marseille1 figure
+	{
+		height: 400px;
+	}
+	
+	.marseille2 figure
+	{
+		height: 180px;
+	}
+	
+}

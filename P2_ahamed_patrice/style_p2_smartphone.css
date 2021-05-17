@@ -10,20 +10,58 @@
 
     /* Navigation */
 
-    .logo
+	header
+	{
+		flex-wrap: wrap;
+	}
+	
+    #logo
     {
-        float: left;
+ 		margin-left:20px;
+		order: 1;
     }
-
+	
+	#navigation
+	{
+		order: 3;
+	}
+	
+	
+	#inscription
+	{
+		margin-right: 20px;
+		order: 2;
+	}
+	
     nav ol
-    {
-        flex-direction: column-reverse;
-        flex-wrap: wrap; 
+    {	
+		margin-left: auto; 
+		margin-right: auto;
     }
+		
+	nav li
+	{
+		border-bottom: 2px #F2F2F2 solid;
+		padding-bottom: 22px;
+		justify-content: center;
 
-
+	}
+	
+	nav li a:hover
+	{
+		color: #0065FC;
+		border-top: 0px;
+		border-bottom: 2px #0065FC solid;
+		padding-bottom: 22px;
+	}
+	
     /*Recherche*/
 
+	#recherche
+	{
+		margin-left: 20px;
+	}
+	
     #recherche h1
     {
         font-size: 1.3em;
@@ -31,7 +69,7 @@
 
     #recherche p
     {
-        font-size: 0.9em;
+        font-size: 1em;
     }
 
     form
@@ -110,8 +148,8 @@
 
     .vignette
     {
-        width: 320px;
-        margin: 5px 0px 5px 30px;
+        width: 370px;
+        margin: 5px 0px 10px 30px;
     }
 
 
@@ -137,7 +175,7 @@
     .marseille1 figure
     {
         height: 200px;
-        width: 320px;
+        width: 370px;
         margin: auto;
         margin-bottom: 20px;
     }
@@ -151,7 +189,7 @@
     {
         height: 200px;
         margin: auto;
-        width: 320px;
+        width: 370px;
         margin-bottom: 20px;
     }
 
